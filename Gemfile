@@ -34,7 +34,9 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Testing gems
-gem 'coveralls', require: false
+# gem 'coveralls', require: false
+gem 'codecov', :require => false, :group => :test
+
 
 
 # Use Capistrano for deployment

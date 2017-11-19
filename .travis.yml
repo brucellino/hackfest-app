@@ -1,4 +1,7 @@
 language: ruby
+environment:
+  - CODECOV_TOKEN="5cd996c3-fe2a-4f93-8b2c-c9cb3a34b6ff"
+
 rvm:
 - 2.3.1
 install:
