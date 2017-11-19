@@ -83,7 +83,10 @@ Use the Zurb Foundation gem (we'll be using Foundation 6), and some fonts from G
 
 ### Add Static Pages
 
-Add a static pages controller and routes
+Add a static pages controller and routes. [1](http://blog.teamtreehouse.com/static-pages-ruby-rails)
+
+  1. [ ] Generate a pages controller - `rails generate controller pages`
+  1. [ ] 
 
 ### Add User Model
 
