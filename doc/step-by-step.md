@@ -92,6 +92,7 @@ Add a static pages controller and routes. [1](http://blog.teamtreehouse.com/stat
   1. [ ] Add a `show` action in `app/controllers/pages_controller.rb` to render pages
   1. [ ] Add a route in `app/config/routes.rb` (get with page name as variable, route to `pages#show`)
   1. [ ] Add a `home.html.erb` in `app/views/pages`
+  1. [ ] Add a test for the static pages
 
 
 ### Add User Model
