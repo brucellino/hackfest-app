@@ -56,6 +56,7 @@ These are the steps you need to take to start from scratch:
 
   - Gemnasium (gem vulnerability)
   - Code Climate (quality of code)
+  - Coveralls 
 
 ### Optional community health
 
