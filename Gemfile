@@ -21,6 +21,8 @@ gem 'uglifier', '>= 1.3.0'
 
 # Use Zurb founation for front-end
 gem 'foundation-rails', '>=6'
+gem 'foundation-icons-sass-rails'
+gem "font-awesome-rails"
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
