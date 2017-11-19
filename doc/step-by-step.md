@@ -115,3 +115,14 @@ A model for projects, their owners, members, components and statuses.
 ## Trigger deployment on code changes
 
 ## Slack hook on user milestones or actions
+
+## Email with mailgun
+
+### Add mailgun controller and messages model ? 
+
+### Styling - use Ink ? 
+
+### Updates
+
+### Feedback form
+
