@@ -4,9 +4,12 @@ This is a step-by-step guide, mostly for @brucellino
 
 ## Prerequisites
 
+### Development Environment 
+
 Assume that you already have:
 
 <!-- TODO : add links to how to get these -->
+ - github account
  - git client
  - ruby
  - rails
@@ -14,6 +17,12 @@ Assume that you already have:
  - A decent editor. Suggest: 
   - VS Code
   - Atom
+
+### Things we will use 
+
+  - Zurb Foundation 6
+  - Omniauth
+  - GitHub auth
 
 ## Step-by-Step 
 
@@ -41,7 +50,7 @@ These are the steps you need to take to start from scratch:
     - [ ] Run tests : `rails test` (no tests added, so this should pass)
     - [ ] Start the server : `rails s`
 
-### Optional test coverage
+### Optional test coverage and monitoring
 
   - Gemnasium (gem vulnerability)
   - Code Climate (quality of code)
@@ -49,7 +58,14 @@ These are the steps you need to take to start from scratch:
 
 ### Add Basic Styling
 
-Add some front-end stuff to make the app look better
+Add some front-end stuff to make the app look better. 
+Use the Zurb Foundation gem (we'll be using Foundation 6), and some fonts from Google fonts.
+
+  1. [Add Zurb Foundation](https://github.com/zurb/foundation-rails)
+    - [ ] Add `gem 'foundation-rails', '>=6'` to Gemfile. (**protip**: you may have to remove the constraint on the sass-rails gem to avooid a conflict - `sass (>= 3.3.0, < 3.5)`)
+    - [ ] Install the gem : `bundle install`
+    - [ ] Install Foundation to the asset pipeline : `rails generate foundation:install` (**protip**: This will overwrite the default application layout)
+
 
 ### Add Static Pages
 
@@ -72,3 +88,5 @@ A model for projects, their owners, members, components and statuses.
 ## A bot to track the members' progress
 
 ## Trigger deployment on code changes
+
+## Slack hook on user milestones or actions
