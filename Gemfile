@@ -21,6 +21,8 @@ gem 'uglifier', '>= 1.3.0'
 
 # Use Zurb founation for front-end
 gem 'foundation-rails', '>=6'
+gem 'foundation-icons-sass-rails'
+gem "font-awesome-rails"
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
@@ -32,6 +34,10 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
+
+# Testing gems
+# gem 'coveralls', require: false
+gem 'codecov', :require => false, :group => :test
 
 
 

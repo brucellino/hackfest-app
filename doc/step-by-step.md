@@ -1,6 +1,8 @@
 # HOWTO
 
-This is a step-by-step guide, mostly for @brucellino
+This is a step-by-step guide, mostly for @brucellino. 
+
+Typically, do a `git commit` at each level of a numbered list.
 
 ## Prerequisites
 
@@ -54,6 +56,7 @@ These are the steps you need to take to start from scratch:
 
   - Gemnasium (gem vulnerability)
   - Code Climate (quality of code)
+  - Coveralls 
 
 ### Optional community health
 
@@ -83,7 +86,15 @@ Use the Zurb Foundation gem (we'll be using Foundation 6), and some fonts from G
 
 ### Add Static Pages
 
-Add a static pages controller and routes
+Add a static pages controller and routes. [1](http://blog.teamtreehouse.com/static-pages-ruby-rails). Probably a good idea to do this on a separate branch.
+
+  1. [ ] Create feature branch : `git checkout -b static_pages`
+  1. [ ] Generate a pages controller - `rails generate controller pages`
+  1. [ ] Add a `show` action in `app/controllers/pages_controller.rb` to render pages
+  1. [ ] Add a route in `app/config/routes.rb` (get with page name as variable, route to `pages#show`)
+  1. [ ] Add a `home.html.erb` in `app/views/pages`
+  1. [ ] Add a test for the static pages
+
 
 ### Add User Model
 

@@ -7,7 +7,7 @@ This is a toy Rails app to practice authentication, models and other rails stuff
 The use case is an app for running a Hackfest.
 
 * Ruby version
-
+    
 * System dependencies
 
 * Configuration
