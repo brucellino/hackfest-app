@@ -98,7 +98,10 @@ Add a static pages controller and routes. [1](http://blog.teamtreehouse.com/stat
 
 ### Add Auth, Users, Sessions
 
-Model users with omniauth and devise
+Model users with omniauth and devise. 
+
+We will use external authentication to model users, having logins from at least ORCID and GitHub. 
+These providers are necessary for the hack and open science aspects.
 
 ### Add Platform Status Dashboard
 
