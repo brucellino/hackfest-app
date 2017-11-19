@@ -1,9 +1,10 @@
-# README
+[![Build Status](https://travis-ci.org/brucellino/hackfest-app.svg?branch=master)](https://travis-ci.org/brucellino/hackfest-app)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Hackfest App
 
-Things you may want to cover:
+This is a toy Rails app to practice authentication, models and other rails stuff. 
+
+The use case is an app for running a Hackfest.
 
 * Ruby version
 
