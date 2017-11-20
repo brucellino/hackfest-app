@@ -107,11 +107,17 @@ We need to have the accounts linked eventually...
   1. [ ] Add gems to Gemfile : `devise, omniauth-github` ; bundle install
   1. [ ] Run the devise installer for the project: `rails generate devise:install`
   1. [ ] Create the user model : `rails generate devise User`
+  1. [ ] Check that the migration is correct - should not have `database_trackable` and should have `omniauthable`
   1. [ ] Migrate the user : `rails db:migrate`
   1. Set up configuration of the providers. We need to store client secrets in a way that won't be exposed on the web. The typical way of  doing this is to have them set in the environment, but this means that the shell needs to be set up just-so. We can alternatively store them in a config file. We'll use [Figaro](https://github.com/laserlemon/figaro) for this:
     - [ ] Add figaro to your gems : `gem 'figaro'`
     - [ ] Install it to your app : `figaro install`
     - [ ] Add your secrets there : `github_client_secret: <secret_hash>`. Now you have `ENV['github_client_secret']`
+  1. [ ] Add a constructor to the user model to extract the information from the provider's auth hash: `self.from_omniauth(auth)`
+  1. Add the OmniAuth providers configured in the User model to the Devise initializer
+  1. Configure routes and controllers - we need to manually add `sign_in` and `sign_out` routes.
+    - [ ] `sign_in` and `sign_out` are added to the `devise_scope` routes
+
 
 
 ### Add Platform Status Dashboard
