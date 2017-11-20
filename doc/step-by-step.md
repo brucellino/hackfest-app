@@ -117,6 +117,7 @@ We need to have the accounts linked eventually...
   1. Add the OmniAuth providers configured in the User model to the Devise initializer
   1. Configure routes and controllers - we need to manually add `sign_in` and `sign_out` routes.
     - [ ] `sign_in` and `sign_out` are added to the `devise_scope` routes
+    - [ ] Add an `omniauth_callbacks_controller` and add a `sign_in_with(provider)` method
 
 
 
