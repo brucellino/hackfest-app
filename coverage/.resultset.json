@@ -1,7 +1,16 @@
 {
   "MiniTest": {
     "coverage": {
+      "/home/becker/Ops/AAROC/hackfest-app/test/models/user_test.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ]
     },
-    "timestamp": 1511097508
+    "timestamp": 1511120570
   }
 }
