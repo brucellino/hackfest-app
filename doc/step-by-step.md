@@ -102,6 +102,17 @@ Model users with omniauth and devise.
 
 We will use external authentication to model users, having logins from at least ORCID and GitHub. 
 These providers are necessary for the hack and open science aspects.
+We need to have the accounts linked eventually...
+
+  1. [ ] Add gems to Gemfile : `devise, omniauth-github` ; bundle install
+  1. [ ] Run the devise installer for the project: `rails generate devise:install`
+  1. [ ] Create the user model : `rails generate devise User`
+  1. [ ] Migrate the user : `rails db:migrate`
+  1. Set up configuration of the providers. We need to store client secrets in a way that won't be exposed on the web. The typical way of  doing this is to have them set in the environment, but this means that the shell needs to be set up just-so. We can alternatively store them in a config file. We'll use [Figaro](https://github.com/laserlemon/figaro) for this:
+    - [ ] Add figaro to your gems : `gem 'figaro'`
+    - [ ] Install it to your app : `figaro install`
+    - [ ] Add your secrets there : `github_client_secret: <secret_hash>`. Now you have `ENV['github_client_secret']`
+
 
 ### Add Platform Status Dashboard
 
