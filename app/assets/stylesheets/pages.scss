@@ -1,4 +1,31 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Kreon|Quantico|Ubuntu+Mono');
 @import "font-awesome";
+.app-col {
+    padding: 2em;
+ }
+@import "palette";
+
+
+$foundation-palette: (
+  primary: $color1,
+  secondary: $color2,
+  success: $color3,
+  warning: $color4,
+  alert: $color5,
+);
+
+body {
+    background-color: $color5;
+    font-family: 'Kreon', 'serif';
+    color: $color2;
+    
+}
+
+h1, h2, h3 {
+  color: $color1;
+  font-family: 'Quantico', 'sans-serif';
+}
+
