@@ -38,6 +38,13 @@ gem 'jbuilder', '~> 2.5'
 # Testing gems
 # gem 'coveralls', require: false
 gem 'codecov', :require => false, :group => :test
+# Store secrets with figaro
+gem 'figaro'
+
+# necessary for authentication
+gem 'devise'
+gem 'omniauth-github'
+gem 'dotenv'
 
 
 
