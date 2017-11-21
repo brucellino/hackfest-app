@@ -12,27 +12,49 @@
   </head>
 
   <body>
-    <div class="top-bar">
-        <div class="top-bar-left">
-          <ul class="dropdown menu" data-dropdown-menu>
-            <li class="menu-text"><%= link_to "", root_path, class: "fa fa-home" %></li>
-            <li class="menu-text"><a href="#">Two</a></li>
-            <li class="menu-text"><a href="#">Three</a></li>
-          </ul>
+    <div class="hero-full-screen">
+      
+        <div class="top-content-section">
+          <div class="top-bar">
+            <div class="top-bar-left">
+              <ul class="menu">
+                <li class="menu-text"><img src="http://placehold.it/75x30" alt="logo"></li>
+                <li><a href="#">Ready</a></li>
+                <li><a href="#">Steady</a></li>
+                <li><a href="#">Hack</a></li>
+              </ul>
+            </div>
+            <div class="top-bar-right">
+              <a class="button menu-text" href="#">Login</a>
+            </div>
+          </div>
         </div>
-        <div class="top-bar-right">
-          <ul class="menu">
-            <li class="menu-text"><button type="button" class="button hollow">login</button></li>
-          </ul>
+      
+        <div class="middle-content-section">
+          <h1>Cloud::Hack()</h1>
+          <button class="button large hollow">Let's</button>
+          <button class="button large hollow">Do this</button>
         </div>
+      
+        <div class="bottom-content-section" data-magellan data-threshold="0">
+          <a href="#main-content-section"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm-18.005-1.568l1.415-1.414 4.59 4.574 4.579-4.574 1.416 1.414-5.995 5.988-6.005-5.988z"/></svg></a>
+        </div>
+      
       </div>
-
+      
+      <div id="main-content-section" data-magellan-target="main-content-section">
+        <!-- your content goes here -->
+      </div>
+      
+      
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
 
 
 
     <%= yield %>
+
+    <%= render "layouts/footer" %>
 
   </body>
 </html>
