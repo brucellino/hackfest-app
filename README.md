@@ -1,4 +1,6 @@
-[![Build Status](https://travis-ci.org/brucellino/hackfest-app.svg?branch=master)](https://travis-ci.org/brucellino/hackfest-app)
+[![Build Status](https://travis-ci.org/brucellino/hackfest-app.svg?branch=master)](https://travis-ci.org/brucellino/hackfest-app) [![codecov](https://codecov.io/gh/brucellino/hackfest-app/branch/master/graph/badge.svg)](https://codecov.io/gh/brucellino/hackfest-app) [![Dependency Status](https://gemnasium.com/badges/github.com/brucellino/hackfest-app.svg)](https://gemnasium.com/github.com/brucellino/hackfest-app)
+
+
 
 # Hackfest App
 
