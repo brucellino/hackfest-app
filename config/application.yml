@@ -11,3 +11,4 @@
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
 github_api_secret: 4c8434277ee123f21bf6fc6d4f86926ae16cdbcb
 github_api_key: 8de424d6934dbc40d802
+CODECOV_TOKEN: "5cd996c3-fe2a-4f93-8b2c-c9cb3a34b6ff"
