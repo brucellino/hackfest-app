@@ -11,3 +11,6 @@ COPY Gemfile /hackfest-app/Gemfile
 COPY Gemfile.lock /hackfest-app/Gemfile.lock
 RUN bundle install
 COPY . /hackfest-app/
+EXPOSE 3000:3000
+ENTRYPOINT ["bundle", "exec", "rails s"] 
+# -p 3000 -b '0.0.0.0'"]
