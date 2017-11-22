@@ -1,7 +1,53 @@
 {
   "MiniTest": {
     "coverage": {
+      "/home/becker/Ops/AAROC/hackfest-app/test/controllers/me_controller_test.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/becker/Ops/AAROC/hackfest-app/test/controllers/pages_controller_test.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null
+      ],
+      "/home/becker/Ops/AAROC/hackfest-app/test/controllers/users_controller_test.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/becker/Ops/AAROC/hackfest-app/test/models/user_test.rb": [
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null
+      ]
     },
-    "timestamp": 1511097508
+    "timestamp": 1511331185
   }
 }
