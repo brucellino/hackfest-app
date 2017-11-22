@@ -18,7 +18,7 @@ gem 'sass-rails'
 gem 'uglifier', '>= 1.3.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
-
+gem 'awesome_print'
 # Use Zurb founation for front-end
 gem 'foundation-rails', '>=6'
 gem 'foundation-icons-sass-rails'
@@ -38,6 +38,13 @@ gem 'jbuilder', '~> 2.5'
 # Testing gems
 # gem 'coveralls', require: false
 gem 'codecov', :require => false, :group => :test
+# Store secrets with figaro
+gem 'figaro'
+
+# necessary for authentication
+# gem 'devise'
+gem 'omniauth-github'
+gem 'dotenv'
 
 
 
