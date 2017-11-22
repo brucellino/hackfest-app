@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/brucellino/hackfest-app.svg?branch=master)](https://travis-ci.org/brucellino/hackfest-app) [![codecov](https://codecov.io/gh/brucellino/hackfest-app/branch/master/graph/badge.svg)](https://codecov.io/gh/brucellino/hackfest-app) [![Dependency Status](https://gemnasium.com/badges/github.com/brucellino/hackfest-app.svg)](https://gemnasium.com/github.com/brucellino/hackfest-app)
 [![Maintainability](https://api.codeclimate.com/v1/badges/18d76457430961500868/maintainability)](https://codeclimate.com/github/brucellino/hackfest-app/maintainability)
-[![Test Coverage](https://api.codeclimate.com/v1/badges/18d76457430961500868/test_coverage)](https://codeclimate.com/github/brucellino/hackfest-app/test_coverage)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/18d76457430961500868/test_coverage)](https://codeclimate.com/github/brucellino/hackfest-app/test_coverage) [![Docker Repository on Quay](https://quay.io/repository/brucellino/hackfest-app/status "Docker Repository on Quay")](https://quay.io/repository/brucellino/hackfest-app)
 
 
 # Hackfest App
