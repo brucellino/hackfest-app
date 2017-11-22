@@ -22,7 +22,12 @@
         </div>
         <div class="top-bar-right">
           <ul class="menu">
-            <li class="menu-text"><a href="/home" type="button" class="button hollow">login</a></li>
+            <li class="menu-text">
+              <% if @current_user %><a href="/logout/" type="button" class="button hollow">logout</a>
+              <% else %>
+              <a href="/home" type="button" class="button hollow">login</a>
+              <% end %>
+            </li>
           </ul>
         </div>
       </div>
