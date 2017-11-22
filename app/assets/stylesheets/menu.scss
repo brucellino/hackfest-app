@@ -1,0 +1,11 @@
+@import "palette";
+
+.top-bar, .bar, .dropdown-menu, ul, li, a,  {
+    background-color: $color4;
+    color: $color1;    
+}
+
+.button, .hollow {
+    color: $color1;
+    border: $color1;
+}
