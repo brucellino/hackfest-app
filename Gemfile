@@ -48,7 +48,7 @@ gem 'omniauth-github'
 gem 'dotenv', '2.4.0'
 
 gem 'unicorn', '~> 4.9'
-gem 'pg', '~> 0.18.3'
+gem 'pg', '1.0.0'
 gem 'sidekiq', '~> 4.0.1'
 gem 'redis-rails'
 
