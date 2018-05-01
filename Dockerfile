@@ -6,12 +6,14 @@ RUN apt-get install -y \
     build-essential \ 
     libpq-dev nodejs \
     libsqlite3-dev
+ENV INSTALL_PATH=/hackfest-app
 RUN mkdir /hackfest-app
 WORKDIR /hackfest-app
-COPY Gemfile /hackfest-app/Gemfile
-COPY Gemfile.lock /hackfest-app/Gemfile.lock
+#COPY Gemfile.lock ${INSTALL_PATH}/Gemfile.lock
+COPY . .
 RUN bundle install
-COPY . /hackfest-app/
+CMD ['ls']
+VOLUME ["$INSTALL_PATH/public"]
 EXPOSE 3000:3000
-ENTRYPOINT ["bundle", "exec", "rails s"] 
+ENTRYPOINT ["bundle", "exec", "unicorn -c ./config/unicorn.rb"] 
 # -p 3000 -b '0.0.0.0'"]
