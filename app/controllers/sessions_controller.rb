@@ -1,16 +1,17 @@
+# The sessions controller handles logged-in sessions as well as
+# logging users out.
 class SessionsController < ApplicationController
-  
-	def create
-		logger.info "Logging you in..."
-		ap request.env['omniauth.auth']
-  	@user = User.find_or_create_from_auth_hash(request.env["omniauth.auth"])
-		session[:user_id] = @user.id
-  	redirect_to :me
+  # The create method creates a session, using omniauth
+  def create
+    logger.info 'Logging you in...'
+    ap request.env['omniauth.auth']
+    @user = User.find_or_create_from_auth_hash(request.env['omniauth.auth'])
+    session[:user_id] = @user.id
+    redirect_to :me
   end
 
   def destroy
-  	session[:user_id] = nil
-  	redirect_to root_path
+    session[:user_id] = nil
+    redirect_to root_path
   end
-
 end

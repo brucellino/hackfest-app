@@ -1,3 +1,5 @@
+# Main application controller. This contains the methods to authenticate
+# users
 class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   helper_method :current_user
@@ -11,6 +13,6 @@ class ApplicationController < ActionController::Base
   end
 
   def user_signed_in?
-    !!current_user
+    !current_user.nil?
   end
 end
