@@ -279,7 +279,7 @@ PLATFORMS
 
 DEPENDENCIES
   awesome_print
-  byebug
+  byebug (~> 10)
   capybara (~> 3)
   codacy-coverage
   codecov
