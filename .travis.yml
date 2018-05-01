@@ -1,12 +1,18 @@
 language: ruby
-environment:
+env:
+  global:
   - CODECOV_TOKEN="5cd996c3-fe2a-4f93-8b2c-c9cb3a34b6ff"
-
+  - CC_TEST_REPORTER_ID=9b69ca08300c99f5d781aaff5055e1e82e069e59d0bb096caf5530c553d81a75
 rvm:
 - 2.3.1
 install:
   - bundle install
 before_script:
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
   - rails db:migrate
 script:
   - rake test
+after_script:
+  - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
