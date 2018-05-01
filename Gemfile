@@ -63,6 +63,7 @@ group :development, :test do
   gem 'capybara', '~> 3'
   gem 'rubocop', '~> 0.55'
   gem 'selenium-webdriver'
+  gem 'sqlite3'
 end
 
 group :development do
