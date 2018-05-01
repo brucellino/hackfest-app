@@ -45,7 +45,7 @@ gem 'figaro'
 # necessary for authentication
 # gem 'devise'
 gem 'omniauth-github'
-gem 'dotenv'
+gem 'dotenv', '2.4.0'
 
 gem 'unicorn', '~> 4.9'
 gem 'pg', '~> 0.18.3'
