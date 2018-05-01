@@ -13,6 +13,7 @@ before_script:
   - ./cc-test-reporter before-build
   - rails db:migrate
 script:
+  - rubocop app --except Metrics/LineLength,Metrics/AbcSize
   - rake test
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT

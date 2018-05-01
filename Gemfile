@@ -6,9 +6,9 @@ git_source(:github) do |repo_name|
 end
 
 gem 'awesome_print', '1.8.0'
+gem 'font-awesome-rails'
 gem 'foundation-icons-sass-rails'
 gem 'foundation-rails', '>=6'
-gem 'font-awesome-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2'
@@ -31,16 +31,10 @@ gem 'turbolinks', '~> 5.1'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 3.0'
+gem 'redis'
+gem 'redis-namespace'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
-# Testing gems
-# gem 'coveralls', require: false
-gem 'codacy-coverage', :require => false
-gem 'codecov', :require => false, :group => :test
-# Store secrets with figaro
-gem 'figaro'
 
 # necessary for authentication
 # gem 'devise'
@@ -56,6 +50,13 @@ gem 'redis-rails'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
+  # Testing gems
+  # gem 'coveralls', require: false
+  gem 'codacy-coverage', :require => false
+  gem 'codecov', :require => false, :group => :test
+  # Store secrets with figaro
+  gem 'figaro'
+
   # Call 'byebug' anywhere in the code to stop execution and get a
   # debugger console
   gem 'byebug', '10.0.2', platforms: [:mri, :mingw, :x64_mingw]
@@ -63,7 +64,6 @@ group :development, :test do
   gem 'capybara', '~> 3'
   gem 'rubocop', '~> 0.55'
   gem 'selenium-webdriver'
-  gem 'sqlite3'
 end
 
 group :development do
@@ -75,6 +75,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'web-console', '>= 3.6.0'
+  gem 'sqlite3'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

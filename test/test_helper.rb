@@ -7,7 +7,8 @@ require 'codecov'
 SimpleCov.formatter = SimpleCov::Formatter::Codecov
 
 class ActiveSupport::TestCase
-  # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
+  # Setup all fixtures in test/fixtures/*.yml for all tests
+  # in alphabetical order.
   fixtures :all
 
   # Add more helper methods to be used by all tests here...

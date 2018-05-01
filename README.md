@@ -9,6 +9,7 @@
 This is a toy Rails app to practice authentication, models and other rails stuff. 
 
 The use case is an app for running a Hackfest.
+The reference for this is [a tutorial from Semaphore](https://semaphoreci.com/community/tutorials/dockerizing-a-ruby-on-rails-application)
 
 * Ruby version
     
@@ -25,5 +26,3 @@ The use case is an app for running a Hackfest.
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-
-* ...

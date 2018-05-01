@@ -24,3 +24,6 @@ config/application.yml
 
 .byebug_history
 .drkiq.env
+
+# ignore the virtualenv
+dev-env
