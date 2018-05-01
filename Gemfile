@@ -58,7 +58,7 @@ gem 'redis-rails'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a
   # debugger console
-  gem 'byebug', '~>10', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug', '10.0.2', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 3'
   gem 'rubocop', '~> 0.55'
