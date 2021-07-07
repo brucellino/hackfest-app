@@ -61,7 +61,7 @@ group :development, :test do
   # debugger console
   gem 'byebug', '10.0.2', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '~> 3'
+  gem 'capybara', '~> 3', '>= 3.0.3'
   gem 'rubocop', '~> 0.55'
   gem 'selenium-webdriver'
 end
