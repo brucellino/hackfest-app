@@ -170,7 +170,7 @@ GEM
     puma (4.3.10)
       nio4r (~> 2.0)
     racc (1.6.0)
-    rack (2.2.3)
+    rack (2.2.4)
     rack-protection (2.1.0)
       rack
     rack-test (1.1.0)
@@ -256,7 +256,7 @@ GEM
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2)
-    sidekiq (6.2.1)
+    sidekiq (6.4.0)
       connection_pool (>= 2.2.2)
       rack (~> 2.0)
       redis (>= 4.2.0)
@@ -334,7 +334,7 @@ DEPENDENCIES
   rubocop (~> 0.55)
   sass-rails (>= 5.0.7)
   selenium-webdriver (>= 3.11.0)
-  sidekiq (= 6.2.1)
+  sidekiq (= 6.4.0)
   spring (>= 2.0.2)
   spring-watcher-listen (~> 2.0.1)
   sqlite3
