@@ -39,7 +39,7 @@ gem 'redis-namespace'
 # necessary for authentication
 # gem 'devise'
 gem 'omniauth-github', '>= 2.0.0'
-gem 'dotenv', '2.4.0'
+gem 'dotenv', '2.8.1'
 
 gem 'unicorn', '5.4.0'
 gem 'pg', '1.0.0'
