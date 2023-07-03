@@ -5,7 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'awesome_print', '1.8.0'
+gem 'awesome_print', '1.9.2'
 gem 'font-awesome-rails', '>= 4.7.0.4'
 gem 'foundation-icons-sass-rails', '>= 3.0.0'
 gem 'foundation-rails', '>= 6.4.3.0'
