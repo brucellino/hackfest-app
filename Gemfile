@@ -41,7 +41,7 @@ gem 'redis-namespace'
 gem 'omniauth-github', '>= 2.0.0'
 gem 'dotenv', '2.4.0'
 
-gem 'unicorn', '5.4.0'
+gem 'unicorn', '5.8.0'
 gem 'pg', '1.0.0'
 gem 'sidekiq', '7.0.8'
 gem 'redis-rails', '>= 5.0.2'
