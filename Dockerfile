@@ -1,5 +1,5 @@
 # Dockerfile
-FROM ruby:2-slim
+FROM ruby:3-slim
 RUN apt-get update -qq && \
     apt-get upgrade -y
 RUN apt-get install -y \ 
