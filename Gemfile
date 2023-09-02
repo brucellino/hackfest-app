@@ -43,7 +43,7 @@ gem 'dotenv', '2.8.1'
 
 gem 'unicorn', '6.1.0'
 gem 'sidekiq', '7.1.2'
-gem 'pg', '1.5.3'
+gem 'pg', '1.5.4'
 gem 'redis-rails', '>= 5.0.2'
 
 # Use Capistrano for deployment
